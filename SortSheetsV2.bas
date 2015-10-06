@@ -72,16 +72,6 @@ Sub AddEmptyRows()
                     V.Add (data)
             End Select
             
-'            If Left(data, 1) = "A" Then
-'                A.Add (data)
-'            ElseIf Left(data, 1) = "B" Then
-'                B.Add (data)
-'            ElseIf Left(data, 1) = "S" Then
-'                S.Add (data)
-'            ElseIf Left(data, 1) = "V" Then
-'                V.Add (data)
-'            End If
-            
         Next i
         
         aPos = A.Count + 2
@@ -92,19 +82,6 @@ Sub AddEmptyRows()
         awb.Worksheets(h).Rows(aPos).EntireRow.Insert
         awb.Worksheets(h).Rows(bPos).EntireRow.Insert
         awb.Worksheets(h).Rows(sPos).EntireRow.Insert
-        
-'        MsgBox Join(A.ToArray(), vbNewLine)
-'        MsgBox (aPos)
-'
-'        MsgBox Join(B.ToArray(), vbNewLine)
-'        MsgBox (bPos)
-'
-'        MsgBox Join(S.ToArray(), vbNewLine)
-'        MsgBox (sPos)
-'
-'        MsgBox Join(V.ToArray(), vbNewLine)
-'        MsgBox (vPos)
-        
         
     Next h
 
